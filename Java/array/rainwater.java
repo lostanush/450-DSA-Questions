@@ -30,11 +30,11 @@ public class rainwater {
 				rl[i] = arr[i];
 			}
 		}
-		int sum = 0;
+		int sum = 1;
 		for (int i = 0; i < rl.length; i++) {
 			int min = Math.min(lr[i], rl[i]);
 			if (min - arr[i] > 0) {
-				sum += min - arr[i];
+				sum *= min - arr[i];
 			}
 		}
 		System.out.println(sum);
